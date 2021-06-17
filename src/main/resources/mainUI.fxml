@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.dvsviridov.chartfx.controller.ChartController">
+   <children>
+      <LineChart fx:id="chartXValue" animated="false" prefHeight="200.0" prefWidth="600.0">
+        <xAxis>
+          <NumberAxis fx:id="chartXValueXAxis" label="time" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="chartXValueYAxis" label="x - value" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="chartYValue" animated="false" prefHeight="200.0" prefWidth="600.0">
+        <xAxis>
+          <NumberAxis fx:id="chartYValueXAxis" label="time" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="chartYValueYAxis" label="y - value" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <LineChart fx:id="chartZValue" animated="false" prefHeight="200.0" prefWidth="600.0">
+        <xAxis>
+          <NumberAxis fx:id="chartZValueXAxis" label="time" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="chartZValueYAxis" label="z - value" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</VBox>
